@@ -44,5 +44,5 @@ def fileRedirector(clientFoldersPath, clientFilesPath):
 
 #getFileNamelist('C:\\Users\\filax\\OneDrive\\Desktop\\Code-repository\\2025-08-03-Investcon-file-redirector\\clientFilesTransport')
 
-fileRedirector('C:\\Users\\filax\OneDrive\\Desktop\\Code-repository\\2025-08-03-Investcon-file-redirector\\clientDatabase',
+fileRedirector('C:\\Users\\filax\\OneDrive\\Desktop\\Code-repository\\2025-08-03-Investcon-file-redirector\\clientDatabase',
                'C:\\Users\\filax\\OneDrive\\Desktop\\Code-repository\\2025-08-03-Investcon-file-redirector\\clientFilesTransport')
