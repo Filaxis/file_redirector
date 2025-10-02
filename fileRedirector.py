@@ -11,14 +11,14 @@ def getFolderNamelist(clientFoldersPath):
     #print(clientFolderList)
     return clientFolderList
 
-def getFileNamelist(clientFilespath):
-    clientFileList = [entry for entry in os.listdir(clientFilespath) if os.path.isfile(os.path.join(clientFilespath, entry))]
+def getFileNamelist(clientFilesPath):
+    clientFileList = [entry for entry in os.listdir(clientFilesPath) if os.path.isfile(os.path.join(clientFilesPath, entry))]
     #print(clientFileList)
     return clientFileList
 
-def fileRedirector(clientFoldersPath, clientFilespath):
+def fileRedirector(clientFoldersPath, clientFilesPath):
     folderList = getFolderNamelist(clientFoldersPath)
-    fileList = getFileNamelist(clientFilespath)
+    fileList = getFileNamelist(clientFilesPath)
     clientNameList = ['The list of all clients for whom at least one file was moved']
     file = open(clientFoldersPath + '\\\\clientFileList.txt', 'w') 
     print("The list of all clients for whom at least one file was moved : ", file.name)
@@ -27,7 +27,7 @@ def fileRedirector(clientFoldersPath, clientFilespath):
         folderName = re.compile(Folder)
         for fileName in fileList:
             if folderName.search(fileName):
-                shutil.copy(clientFilespath + '\\\\' + fileName, clientFoldersPath + '\\\\' + Folder)
+                shutil.copy(clientFilesPath + '\\\\' + fileName, clientFoldersPath + '\\\\' + Folder)
                 if (Folder in clientNameList) == False:
                     clientNameList.append(Folder)
     print(clientNameList)
