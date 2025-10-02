@@ -27,7 +27,7 @@ def fileRedirector(clientFoldersPath, clientFilesPath):
         folderName = re.compile(Folder)
         for fileName in fileList:
             if folderName.search(fileName):
-                shutil.copy(clientFilesPath + '\\\\' + fileName, clientFoldersPath + '\\\\' + Folder)
+                shutil.move(clientFilesPath + '\\\\' + fileName, clientFoldersPath + '\\\\' + Folder)
                 if (Folder in clientNameList) == False:
                     clientNameList.append(Folder)
     print(clientNameList)
