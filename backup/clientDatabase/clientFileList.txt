@@ -1,0 +1,8 @@
+The list of all clients for whom at least one file was moved
+Angler Rudolph
+Berger Antonia
+Feigl Ulrike
+Guttenberg Maximilian
+Thalbauer Christine
+Thalbauer Maria
+Wiesinger Arthur
